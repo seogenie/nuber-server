@@ -1,0 +1,36 @@
+{
+  "name": "nuber-server",
+  "version": "1.0.0",
+  "description": "Server for the (N)Uber Clone ( GraphQL, Typescript, NodeJS )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seogenie/nuber-server.git"
+  },
+  "author": "seojin <seogenie@naver.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seogenie/nuber-server/issues"
+  },
+  "homepage": "https://github.com/seogenie/nuber-server#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/helmet": "^0.0.38",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.5.2",
+    "nodemon": "^1.18.0",
+    "ts-node": "^7.0.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "graphql-yoga": "^1.14.12",
+    "helmet": "^3.12.1",
+    "morgan": "^1.9.0"
+  }
+}

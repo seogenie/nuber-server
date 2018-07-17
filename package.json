@@ -4,6 +4,7 @@
   "description": "Server for the (N)Uber Clone ( GraphQL, Typescript, NodeJS )",
   "main": "index.js",
   "scripts": {
+    "predev": "yarn run types",
     "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql",
     "pretypes": "gql-merge --out-file ./src/scheme.graphql ./src/api/**/*.graphql",
     "types": "graphql-to-typescript ./src/scheme.graphql ./src/types/graph.d.ts"

@@ -31,12 +31,15 @@
     "nodemon": "^1.18.0",
     "ts-node": "^7.0.0",
     "tslint-config-prettier": "^1.13.0",
+    "typeorm": "^0.2.7",
     "typescript": "^2.9.2"
   },
   "dependencies": {
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "graphql-yoga": "^1.14.12",
     "helmet": "^3.12.1",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "pg": "^7.4.3"
   }
 }

@@ -4,8 +4,9 @@
   "description": "Server for the (N)Uber Clone ( GraphQL, Typescript, NodeJS )",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql",
+    "pretypes": "gql-merge --out-file ./src/scheme.graphql ./src/api/**/*.graphql",
+    "types": "graphql-to-typescript ./src/scheme.graphql ./src/types/graph.d.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
     "@types/helmet": "^0.0.38",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.5.2",
+    "babel-runtime": "^6.26.0",
+    "gql-merge": "^0.0.6",
+    "graphql-to-typescript": "^0.1.2",
     "graphql-tools": "^3.0.5",
     "merge-graphql-schemas": "^1.5.2",
     "nodemon": "^1.18.0",

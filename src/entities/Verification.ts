@@ -9,7 +9,6 @@ import {
        } 
     from "typeorm";
 import { verificationTarget } from "../types/types";
-
 const PHONE = "PHONE"
 const EMAIL = "EMAIL"
 
@@ -25,6 +24,9 @@ class Verification extends BaseEntity{
 
     @Column({type:"text"})
     key: string
+
+    @Column({type: "boolean", default: false})
+    used: boolean
 
     @Column({type: "boolean", default:false})
     verified: boolean

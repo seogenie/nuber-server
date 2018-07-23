@@ -5,9 +5,9 @@ const createJWT = (userId: number) : string => {
         {
             id: userId
         },
-        process.env.JWT_TOKEN
+        process.env.JWT_TOKEN || ""
     )
-    return token
+    return  token
 }
 
 export default createJWT

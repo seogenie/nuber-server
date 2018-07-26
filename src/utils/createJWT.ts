@@ -1,13 +1,13 @@
-import jwt from "jsonwebtoken"
+import jwt from "jsonwebtoken";
 
-const createJWT = (userId: number) : string => {
-    const token = jwt.sign(
-        {
-            id: userId
-        },
-        process.env.JWT_TOKEN || ""
-    )
-    return  token
-}
+const createJWT = (id: number): string => {
+  const token = jwt.sign(
+    {
+      id
+    },
+    process.env.JWT_TOKEN || ""
+  );
+  return token;
+};
 
-export default createJWT
+export default createJWT;

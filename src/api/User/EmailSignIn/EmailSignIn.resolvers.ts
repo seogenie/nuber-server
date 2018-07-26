@@ -1,10 +1,10 @@
-import User from "../../../entities/User"
+import User from "../../../entities/User";
 import {
   EmailSignInMutationArgs,
   EmailSignInResponse
 } from "../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
-import createJWT from "../../../utils/createJWT"
+import createJWT from "../../../utils/createJWT";
 
 const resolvers: Resolvers = {
   Mutation: {
@@ -22,22 +22,22 @@ const resolvers: Resolvers = {
             token: null
           };
         }
-        const checkPassword = await user.comparePassword(password)
-        if(checkPassword){
-          const token = createJWT(user.id)
-            return {
-                ok: true,
-                error: null,
-                token
-            }
+        const checkPassword = await user.comparePassword(password);
+        if (checkPassword) {
+          const token = createJWT(user.id);
+          return {
+            ok: true,
+            error: null,
+            token
+          };
         } else {
-            return {
-                ok: false,
-                error: "wrong pw",
-                token: null
-              };
+          return {
+            ok: false,
+            error: "Wrong password",
+            token: null
+          };
         }
-     } catch (error) {
+      } catch (error) {
         return {
           ok: false,
           error: error.message,

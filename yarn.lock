@@ -68,13 +68,7 @@
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.8.6.tgz#b34fb880493ba835b0c067024ee70130d6f9bb68"
 
-"@types/helmet@^0.0.38":
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/@types/helmet/-/helmet-0.0.38.tgz#88f19752375565903f76fecc50dd99ed08131f35"
-  dependencies:
-    "@types/express" "*"
-
-"@types/jsonwebtoken@^7.2.8":
+"@types/jsonwebtoken@^7.2.7":
   version "7.2.8"
   resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-7.2.8.tgz#8d199dab4ddb5bba3234f8311b804d2027af2b3a"
   dependencies:
@@ -90,15 +84,13 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
 
-"@types/morgan@^1.7.35":
-  version "1.7.35"
-  resolved "https://registry.yarnpkg.com/@types/morgan/-/morgan-1.7.35.tgz#6358f502931cc2583d7a94248c41518baa688494"
-  dependencies:
-    "@types/express" "*"
-
-"@types/node@*", "@types/node@^10.5.2":
+"@types/node@*":
   version "10.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
+
+"@types/node@^10.5.0":
+  version "10.5.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.3.tgz#5bcfaf088ad17894232012877669634c06b20cc5"
 
 "@types/q@^0":
   version "0.0.37"
@@ -424,12 +416,12 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bcrypt@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/bcrypt/-/bcrypt-3.0.0.tgz#0cd38983f45143aa5a6122c9660d0b7ec3a33fb0"
+bcrypt@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/bcrypt/-/bcrypt-2.0.1.tgz#229c5afe09379789f918efe86e5e5b682e509f85"
   dependencies:
     nan "2.10.0"
-    node-pre-gyp "0.10.2"
+    node-pre-gyp "0.9.1"
 
 binary-extensions@^1.0.0:
   version "1.11.0"
@@ -1496,7 +1488,7 @@ graphql-tools@^2.23.1:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-graphql-tools@^3.0.2, graphql-tools@^3.0.5:
+graphql-tools@^3.0.2, graphql-tools@^3.0.4:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-3.0.5.tgz#544542dbf2fddc8c3d7d654965285a3bc747b10b"
   dependencies:
@@ -1506,7 +1498,7 @@ graphql-tools@^3.0.2, graphql-tools@^3.0.5:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-graphql-yoga@^1.14.12:
+graphql-yoga@^1.14.10:
   version "1.14.12"
   resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-1.14.12.tgz#d579bed16c43f2296b53b25f86075976cb714e92"
   dependencies:
@@ -2123,9 +2115,9 @@ lru-cache@^4.0.1, lru-cache@^4.1.2:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-mailgun-js@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/mailgun-js/-/mailgun-js-0.20.0.tgz#ebec0f9da3408388e9d74e12008d9633b982f6d7"
+mailgun-js@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/mailgun-js/-/mailgun-js-0.19.0.tgz#3be5b153b4198abb7807e4aa9a332a62fb5389c2"
   dependencies:
     async "^2.6.1"
     debug "~3.1.0"
@@ -2347,9 +2339,9 @@ node-fetch@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0.tgz#982bba43ecd4f2922a29cc186a6bbb0bb73fcba6"
 
-node-pre-gyp@0.10.2:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.10.2.tgz#e8945c20ef6795a20aac2b44f036eb13cf5146e3"
+node-pre-gyp@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.9.1.tgz#f11c07516dd92f87199dbc7e1838eab7cd56c9e0"
   dependencies:
     detect-libc "^1.0.2"
     mkdirp "^0.5.1"
@@ -2357,7 +2349,7 @@ node-pre-gyp@0.10.2:
     nopt "^4.0.1"
     npm-packlist "^1.1.6"
     npmlog "^4.0.2"
-    rc "^1.2.7"
+    rc "^1.1.7"
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
@@ -2377,9 +2369,9 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
-nodemon@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.0.tgz#44b75d5f19065c47a262d4ab21990da3b6f8feae"
+nodemon@^1.17.5:
+  version "1.18.3"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.3.tgz#46e681ee0dd1b590562e03019b4c5df234f906f9"
   dependencies:
     chokidar "^2.0.2"
     debug "^3.1.0"
@@ -2828,7 +2820,7 @@ raw-body@2.3.3, raw-body@^2.2.0:
     iconv-lite "0.4.23"
     unpipe "1.0.0"
 
-rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
+rc@^1.0.1, rc@^1.1.6, rc@^1.1.7, rc@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   dependencies:
@@ -3427,7 +3419,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
-twilio@^3.18.0:
+twilio@^3.17.4:
   version "3.18.0"
   resolved "https://registry.yarnpkg.com/twilio/-/twilio-3.18.0.tgz#b3b71d75cc683839f83cb4f8ffea74b1dbac3dbc"
   dependencies:
